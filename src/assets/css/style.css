@@ -1,0 +1,294 @@
+:root {
+  --primary-theme: #0dcaf0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.navlink:hover {
+  border-bottom: 3px solid var(--primary-theme);
+}
+
+.col-animation {
+  height: 300px;
+  line-height: 200px;
+}
+
+.text {
+  position: relative;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.second-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  border-left: 2px solid var(--primary-theme);
+  animation: animate 4s steps(20) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.hero-img {
+  width: 60%;
+  top: 0;
+  right: 0;
+  margin-top: -10rem;
+  margin-right: -4rem;
+}
+
+.region {
+  margin-top: 12rem;
+  font-size: 24px;
+}
+
+.fs-title {
+  font-size: 48px;
+}
+
+.about-video {
+  width: 100%;
+  height: 400px;
+}
+
+i.fa-circle-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+swiper-container .mySwiper-portofolio {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mySwiper-portofolio swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 450px;
+  cursor: pointer;
+}
+
+.text-img {
+  width: 100%;
+  position: absolute;
+  bottom: 50;
+  opacity: 0;
+}
+
+.mySwiper-portofolio swiper-slide:hover .text-img {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: ease-out 0.3s;
+}
+
+.mySwiper-portofolio swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+swiper-container .mySwiper-training {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper-training swiper-slide {
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid #ffffff;
+  overflow: visible;
+  text-align: center;
+  height: 1px;
+}
+
+hr:after {
+  content: "◉";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.cards {
+  background-color: transparent;
+}
+
+.cards:hover {
+  background-color: #0dcaf0bb;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.fs-sosmed {
+  font-size: x-large;
+}
+
+hr.sosmed {
+  position: relative;
+  border: 1px solid #ffffff;
+  height: 1px;
+  margin: 10px 0;
+}
+
+hr.sosmed::before,
+hr.sosmed::after {
+  content: "◈";
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1;
+  position: absolute;
+  top: -9px;
+}
+
+hr.sosmed::before {
+  left: -5px;
+}
+
+hr.sosmed::after {
+  right: -7px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .col-animation {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .text {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .contact-me {
+    width: 155px;
+    font-size: medium;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: -4rem;
+  }
+
+  .region {
+    width: 150px;
+    margin-top: 5rem;
+    font-size: 16px;
+  }
+
+  .fs-title {
+    font-size: 20px;
+  }
+
+  .about-video {
+    width: 100%;
+    height: auto;
+  }
+
+  i.fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .get-in-touch {
+    width: 160px;
+    font-size: medium;
+  }
+
+  .mySwiper-portofolio swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 230px;
+  }
+
+  .fs-sosmed {
+    font-size: medium;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 992px) {
+  .col-animation {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .text {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .contact-me {
+    width: 155px;
+    font-size: medium;
+    margin-top: 3rem;
+  }
+
+  .hero-img {
+    width: 70%;
+    margin-top: -2rem;
+    margin-right: -5rem;
+  }
+
+  .region {
+    width: 250px;
+    margin-top: 10rem;
+    font-size: 16px;
+  }
+
+  .fs-title {
+    font-size: 35px;
+  }
+
+  .about-video {
+    width: 100%;
+    height: auto;
+  }
+
+  .mySwiper-portofolio swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 400px;
+  }
+
+  .fs-sosmed {
+    font-size: x-large;
+  }
+}
