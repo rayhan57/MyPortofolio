@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../assets/img/img1.png";
 import img2 from "../assets/img/img2.png";
 import img3 from "../assets/img/img3.png";
+import img4 from "../assets/img/img4.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const PortofolioComponent = () => {
@@ -53,6 +54,12 @@ const PortofolioComponent = () => {
           img={img3}
           textImg={
             "A website that serves movie lists with ReactJS and leverages the public API from TMDB."
+          }
+        />
+        <SwiperSlide
+          img={img4}
+          textImg={
+            "An e-commerce site developed using ReactJS and integrating Fakestore API."
           }
         />
       </swiper-container>
